@@ -10,11 +10,17 @@ It doesn't do anything particularly useful, but you can see that in the workflow
 You'll notice that the subworkflow action in workflow.xml is shorter than the mapreduce action in mr-action.xml.  This would be more noticable if the mapreduce action required more properties.  
 
 
+== Building the Workflow ==
+1) In pom.xml, set the "oozie.version" property to your version of Oozie; it should work with just about any version
+2) Build the project
+    mvn clean package assembly:single
+The workflow directory is now called "subwf-repeat" and is under the target/Subworkflow-Repeat-1.0/ directory.  There is also a tarball of the same in target/
+
+
 == Preparing the Workflow ==
-1) Adjust subwf-repeat/job.properties as necessary
-2) If not using CDH 4.4.0, replace subwf-repeat/lib/oozie-examples-3.3.2-cdh4.4.0.jar with the corresponding oozie-examples jar for your version of Oozie
-3) Upload the "subwf-repeat" dir to your home directory in HDFS
+1) Upload the "subwf-repeat" dir to your home directory in HDFS
     hadoop fs -put subwf-repeat subwf-repeat
+2) Adjust subwf-repeat/job.properties as necessary for your cluster (i.e. jobTracker and nameNode)
 
 
 == Running the Workflow ==
