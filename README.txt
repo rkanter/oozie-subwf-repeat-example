@@ -25,4 +25,4 @@ The workflow directory is now called "subwf-repeat" and is under the target/Subw
 
 == Running the Workflow ==
 1) Submit the workflow to Oozie
-    oozie job -config subwf-repeat/job.properties
+    oozie job -config subwf-repeat/job.properties -run
