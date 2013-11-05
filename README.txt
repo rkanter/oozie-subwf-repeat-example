@@ -1,7 +1,7 @@
 How to: Shorten Your Oozie Workflow Definitions
 ===============================================
 
-Blog Post: http://TODO
+Blog Post: http://blog.cloudera.com/blog/2013/11/how-to-shorten-your-oozie-workflow-definitions
 
 
 == Description ==
