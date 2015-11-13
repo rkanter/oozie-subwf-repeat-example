@@ -24,7 +24,7 @@ The workflow directory is now called "subwf-repeat" and is under the `target/Sub
 
 ----
 1. Upload the "subwf-repeat" dir to your home directory in HDFS: `hadoop fs -put subwf-repeat subwf-repeat`
-1. Adjust subwf-repeat/job.properties as necessary for your cluster (i.e. `jobTracker` and `nameNode`)
+1. Adjust `subwf-repeat/job.properties` as necessary for your cluster (i.e. `jobTracker` and `nameNode`)
 
 
 ## Running the Workflow
